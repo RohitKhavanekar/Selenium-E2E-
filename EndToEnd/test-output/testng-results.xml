@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21178" started-at="2020-06-04T12:31:18 IST" finished-at="2020-06-04T12:31:39 IST">
+  <suite name="Default suite" duration-ms="17927" started-at="2020-06-06T11:28:09 IST" finished-at="2020-06-06T11:28:27 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21178" started-at="2020-06-04T12:31:18 IST" finished-at="2020-06-04T12:31:39 IST">
-      <class name="SeleniumE2E.HomePage">
-        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:SeleniumE2E.HomePage@63e2203c]" name="basePageNavigation" duration-ms="21111" started-at="2020-06-04T12:31:18 IST" finished-at="2020-06-04T12:31:39 IST">
+    <test name="Default test" duration-ms="17927" started-at="2020-06-06T11:28:09 IST" finished-at="2020-06-06T11:28:27 IST">
+      <class name="SeleniumE2E.Globaling">
+        <test-method status="PASS" signature="initlization()[pri:0, instance:SeleniumE2E.Globaling@9660f4e]" name="initlization" is-config="true" duration-ms="4947" started-at="2020-06-06T11:28:09 IST" finished-at="2020-06-06T11:28:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initlization -->
+        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:SeleniumE2E.Globaling@9660f4e]" name="basePageNavigation" duration-ms="12653" started-at="2020-06-06T11:28:14 IST" finished-at="2020-06-06T11:28:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-      </class> <!-- SeleniumE2E.HomePage -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:SeleniumE2E.Globaling@9660f4e]" name="teardown" is-config="true" duration-ms="250" started-at="2020-06-06T11:28:27 IST" finished-at="2020-06-06T11:28:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- SeleniumE2E.Globaling -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

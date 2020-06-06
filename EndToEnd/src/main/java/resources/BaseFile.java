@@ -12,6 +12,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class BaseFile   //THIS FILE IS BASE FILE ONLY CHANGE THE PARAMETRS IN THIS FILE 
 {
 	public WebDriver driver; 
+	
+	
 	public WebDriver initlizeDriver() throws IOException
 	{
 		Properties prop = new Properties();
@@ -19,6 +21,8 @@ public class BaseFile   //THIS FILE IS BASE FILE ONLY CHANGE THE PARAMETRS IN TH
 		
 		prop.load(fis);
 		String browserName = prop.getProperty("browser");
+		
+		
 		
 		if(browserName.equalsIgnoreCase("Chrome"))//USE EQUALS OPERATOR CASE
 		{

@@ -1,0 +1,6 @@
+13:03:16.291 [main] INFO  SeleniumE2E.HomePage - Driver is Inatlized
+13:03:35.994 [main] INFO  SeleniumE2E.HomePage - Restricted User
+13:03:36.135 [main] INFO  SeleniumE2E.HomePage - Submited
+13:03:44.709 [main] INFO  SeleniumE2E.HomePage - Non Restriced User
+13:03:48.028 [main] INFO  SeleniumE2E.HomePage - Submited
+13:04:01.451 [main] INFO  SeleniumE2E.Globaling - Assertion Done Using LOG4J

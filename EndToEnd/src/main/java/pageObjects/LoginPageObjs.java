@@ -12,6 +12,7 @@ public class LoginPageObjs
 	By username = By.xpath("//input[@id='user_email']");
 	By password = By.xpath("//input[@type='password']");
 	By login = By.xpath("//input[@name='commit']");
+	By prompt = By.xpath("//*[@class='content-box']/h1");
 	
 	
 	
@@ -40,6 +41,13 @@ public class LoginPageObjs
 	{
 		return driver.findElement(login);
 	}
+	
+	public WebElement prompt() 
+	{
+		return driver.findElement(prompt);
+		
+	}
+	
 	
 	
 	
