@@ -1,0 +1,7 @@
+18:06:25.802 [TestNG-tests-1] INFO  SeleniumE2E.HomePage - Submited
+18:06:32.718 [TestNG-tests-1] INFO  SeleniumE2E.HomePage - Non Restriced User
+18:06:35.260 [TestNG-tests-1] INFO  SeleniumE2E.HomePage - Submited
+10:44:36.481 [TestNG-tests-1] INFO  SeleniumE2E.HomePage - Driver is Inatlized
+10:45:05.947 [TestNG-tests-1] INFO  SeleniumE2E.HomePage - Restricted User
+10:45:06.828 [TestNG-tests-2] INFO  SeleniumE2E.Globaling - Assertion Done Using LOG4J
+10:45:08.035 [TestNG-tests-1] INFO  SeleniumE2E.HomePage - Submited

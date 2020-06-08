@@ -1,3 +1,7 @@
-18:06:25.802 [TestNG-tests-1] INFO  SeleniumE2E.HomePage - Submited
-18:06:32.718 [TestNG-tests-1] INFO  SeleniumE2E.HomePage - Non Restriced User
-18:06:35.260 [TestNG-tests-1] INFO  SeleniumE2E.HomePage - Submited
+10:45:18.191 [TestNG-tests-1] INFO  SeleniumE2E.HomePage - Non Restriced User
+10:45:20.707 [TestNG-tests-1] INFO  SeleniumE2E.HomePage - Submited
+10:48:10.405 [TestNG-tests-1] INFO  SeleniumE2E.HomePage - Driver is Inatlized
+10:48:36.139 [TestNG-tests-1] INFO  SeleniumE2E.HomePage - Restricted User
+10:48:39.336 [TestNG-tests-1] INFO  SeleniumE2E.HomePage - Submited
+10:48:46.456 [TestNG-tests-1] INFO  SeleniumE2E.HomePage - Non Restriced User
+10:48:49.262 [TestNG-tests-1] INFO  SeleniumE2E.HomePage - Submited

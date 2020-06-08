@@ -1,25 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="17927" started-at="2020-06-06T11:28:09 IST" finished-at="2020-06-06T11:28:27 IST">
+  <suite name="Suite" duration-ms="48770" started-at="2020-06-08T10:48:04 IST" finished-at="2020-06-08T10:48:53 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="17927" started-at="2020-06-06T11:28:09 IST" finished-at="2020-06-06T11:28:27 IST">
-      <class name="SeleniumE2E.Globaling">
-        <test-method status="PASS" signature="initlization()[pri:0, instance:SeleniumE2E.Globaling@9660f4e]" name="initlization" is-config="true" duration-ms="4947" started-at="2020-06-06T11:28:09 IST" finished-at="2020-06-06T11:28:14 IST">
+    <test name="Test" duration-ms="48770" started-at="2020-06-08T10:48:04 IST" finished-at="2020-06-08T10:48:53 IST">
+      <class name="SeleniumE2E.HomePage">
+        <test-method status="PASS" signature="initlization()[pri:0, instance:SeleniumE2E.HomePage@63070bab]" name="initlization" is-config="true" duration-ms="5691" started-at="2020-06-08T10:48:04 IST" finished-at="2020-06-08T10:48:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initlization -->
-        <test-method status="PASS" signature="basePageNavigation()[pri:0, instance:SeleniumE2E.Globaling@9660f4e]" name="basePageNavigation" duration-ms="12653" started-at="2020-06-06T11:28:14 IST" finished-at="2020-06-06T11:28:27 IST">
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SeleniumE2E.HomePage@63070bab]" name="basePageNavigation" duration-ms="28916" started-at="2020-06-08T10:48:10 IST" data-provider="getdata" finished-at="2020-06-08T10:48:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[resticteduser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Restricted User]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:SeleniumE2E.Globaling@9660f4e]" name="teardown" is-config="true" duration-ms="250" started-at="2020-06-06T11:28:27 IST" finished-at="2020-06-06T11:28:27 IST">
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SeleniumE2E.HomePage@63070bab]" name="basePageNavigation" duration-ms="9921" started-at="2020-06-08T10:48:39 IST" data-provider="getdata" finished-at="2020-06-08T10:48:49 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonrestricteduser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Non Restriced User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:SeleniumE2E.HomePage@63070bab]" name="teardown" is-config="true" duration-ms="4212" started-at="2020-06-08T10:48:49 IST" finished-at="2020-06-08T10:48:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- SeleniumE2E.Globaling -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- SeleniumE2E.HomePage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

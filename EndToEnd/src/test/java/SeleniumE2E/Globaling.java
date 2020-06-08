@@ -39,7 +39,7 @@ public class Globaling extends BaseFile
 		HomePageObjs l = new HomePageObjs(driver);
 		l.getsignin().click();
 		LoginPageObjs lp = new LoginPageObjs(driver);
-		Assert.assertEquals(lp.prompt().getText(), "Log In to Rahul Shetty Academy");
+		Assert.assertEquals(lp.prompt().getText(), "Log In to Rahul Shetty Academy123");
 		System.out.println("Assertion Done!");
 		Log.info("Assertion Done Using LOG4J");
 
