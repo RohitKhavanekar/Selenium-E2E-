@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="48770" started-at="2020-06-08T10:48:04 IST" finished-at="2020-06-08T10:48:53 IST">
+  <suite name="Suite" duration-ms="55084" started-at="2020-06-08T19:28:37 IST" finished-at="2020-06-08T19:29:32 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="48770" started-at="2020-06-08T10:48:04 IST" finished-at="2020-06-08T10:48:53 IST">
+    <test name="Test" duration-ms="32589" started-at="2020-06-08T19:28:37 IST" finished-at="2020-06-08T19:29:10 IST">
       <class name="SeleniumE2E.HomePage">
-        <test-method status="PASS" signature="initlization()[pri:0, instance:SeleniumE2E.HomePage@63070bab]" name="initlization" is-config="true" duration-ms="5691" started-at="2020-06-08T10:48:04 IST" finished-at="2020-06-08T10:48:10 IST">
+        <test-method status="PASS" signature="initlization()[pri:0, instance:SeleniumE2E.HomePage@23c30a20]" name="initlization" is-config="true" duration-ms="5350" started-at="2020-06-08T19:28:37 IST" finished-at="2020-06-08T19:28:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initlization -->
-        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SeleniumE2E.HomePage@63070bab]" name="basePageNavigation" duration-ms="28916" started-at="2020-06-08T10:48:10 IST" data-provider="getdata" finished-at="2020-06-08T10:48:39 IST">
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SeleniumE2E.HomePage@23c30a20]" name="basePageNavigation" duration-ms="16475" started-at="2020-06-08T19:28:42 IST" data-provider="getdata" finished-at="2020-06-08T19:28:59 IST">
           <params>
             <param index="0">
               <value>
@@ -32,7 +32,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SeleniumE2E.HomePage@63070bab]" name="basePageNavigation" duration-ms="9921" started-at="2020-06-08T10:48:39 IST" data-provider="getdata" finished-at="2020-06-08T10:48:49 IST">
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:SeleniumE2E.HomePage@23c30a20]" name="basePageNavigation" duration-ms="10220" started-at="2020-06-08T19:28:59 IST" data-provider="getdata" finished-at="2020-06-08T19:29:09 IST">
           <params>
             <param index="0">
               <value>
@@ -53,11 +53,70 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- basePageNavigation -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:SeleniumE2E.HomePage@63070bab]" name="teardown" is-config="true" duration-ms="4212" started-at="2020-06-08T10:48:49 IST" finished-at="2020-06-08T10:48:53 IST">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:SeleniumE2E.HomePage@23c30a20]" name="teardown" is-config="true" duration-ms="435" started-at="2020-06-08T19:29:09 IST" finished-at="2020-06-08T19:29:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- SeleniumE2E.HomePage -->
     </test> <!-- Test -->
+    <test name="Globaling Test" duration-ms="21264" started-at="2020-06-08T19:29:11 IST" finished-at="2020-06-08T19:29:32 IST">
+      <class name="SeleniumE2E.Globaling">
+        <test-method status="PASS" signature="initlization()[pri:0, instance:SeleniumE2E.Globaling@54e1c68b]" name="initlization" is-config="true" duration-ms="3689" started-at="2020-06-08T19:29:11 IST" finished-at="2020-06-08T19:29:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initlization -->
+        <test-method status="FAIL" signature="basePageNavigation()[pri:0, instance:SeleniumE2E.Globaling@54e1c68b]" name="basePageNavigation" duration-ms="16524" started-at="2020-06-08T19:29:14 IST" finished-at="2020-06-08T19:29:31 IST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Log In to Rahul Shetty Academy123] but found [Log In to Rahul Shetty Academy]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Log In to Rahul Shetty Academy123] but found [Log In to Rahul Shetty Academy]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:575)
+at org.testng.Assert.assertEquals(Assert.java:585)
+at SeleniumE2E.Globaling.basePageNavigation(Globaling.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:SeleniumE2E.Globaling@54e1c68b]" name="teardown" is-config="true" duration-ms="351" started-at="2020-06-08T19:29:32 IST" finished-at="2020-06-08T19:29:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- SeleniumE2E.Globaling -->
+    </test> <!-- Globaling Test -->
   </suite> <!-- Suite -->
 </testng-results>

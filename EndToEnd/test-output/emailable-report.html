@@ -9,11 +9,18 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">48,770</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">32,589</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Globaling Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">21,264</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">1</th><th class="num">53,853</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">SeleniumE2E.HomePage</td><td><a href="#m0">basePageNavigation</a></td><td rowspan="2">1591593490421</td><td rowspan="2">28916</td></tr><tr class="passedeven"><td><a href="#m1">basePageNavigation</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">SeleniumE2E.HomePage</td><td><a href="#m0">basePageNavigation</a></td><td rowspan="2">1591624722920</td><td rowspan="2">16475</td></tr><tr class="passedeven"><td><a href="#m1">basePageNavigation</a></td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Globaling Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">SeleniumE2E.Globaling</td><td><a href="#m2">basePageNavigation</a></td><td rowspan="1">1591624754992</td><td rowspan="1">16524</td></tr></tbody>
 </table>
 <h2>Test</h2><h3 id="m0">SeleniumE2E.HomePage#basePageNavigation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>resticteduser@gmail.com</td><td>123</td><td>Restricted User</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m1">SeleniumE2E.HomePage#basePageNavigation</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>nonrestricteduser@gmail.com</td><td>456</td><td>Non Restriced User</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Globaling Test</h2><h3 id="m2">SeleniumE2E.Globaling#basePageNavigation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Log In to Rahul Shetty Academy123] but found [Log In to Rahul Shetty Academy]
+	at SeleniumE2E.Globaling.basePageNavigation(Globaling.java:42)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
