@@ -19,22 +19,24 @@ public class Listeners extends BaseFile implements ITestListener
 	
 	ExtentTest test;
 	ExtentReports extent =  ExtentReportNG.getReportObject();
+	ThreadLocal<ExtentTest> extenTest = new ThreadLocal<ExtentTest>();
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
 		test =  extent.createTest(result.getMethod().getMethodName());
+		extenTest.set(test);
 		
 	}
 
 	public void onTestSuccess(ITestResult result) 
 	{
 		// TODO Auto-generated method stub
-		test.log(Status.PASS, "Test Passed");
+		extenTest.get().log(Status.PASS, "Test Passed");
 		
 	}
 
 	public void onTestFailure(ITestResult result) {
 		// TODO Auto-generated method stub
-		test.fail(result.getThrowable());
+		extenTest.get().fail(result.getThrowable());
 		WebDriver driver =null;
 		String testMethodname = result.getMethod().getMethodName();
 		try {
@@ -44,7 +46,7 @@ public class Listeners extends BaseFile implements ITestListener
 			
 		}
 		try {
-			getScreenShotPath(testMethodname,driver);
+			extenTest.get().addScreenCaptureFromPath(getScreenShotPath(testMethodname,driver), result.getMethod().getMethodName());
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

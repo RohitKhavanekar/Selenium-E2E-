@@ -42,12 +42,13 @@ public class BaseFile   //THIS FILE IS BASE FILE ONLY CHANGE THE PARAMETRS IN TH
 		return driver;
 	}
 	
-	public void getScreenShotPath(String testCaseName, WebDriver driver) throws IOException
+	public String getScreenShotPath(String testCaseName, WebDriver driver) throws IOException
 	{
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		String destinationFIle = System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png";
 		FileUtils.copyFile(source,new File(destinationFIle));
+		return destinationFIle;
 	
 	}
 
