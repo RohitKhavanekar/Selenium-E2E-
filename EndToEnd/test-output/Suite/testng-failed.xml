@@ -10,7 +10,7 @@
         <methods>
           <include name="initlization"/>
           <include name="teardown"/>
-          <include name="basePageNavigation" invocation-numbers="0"/>
+          <include name="basePageNavigation"/>
         </methods>
       </class> <!-- SeleniumE2E.HomePage -->
     </classes>
