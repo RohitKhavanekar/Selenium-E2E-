@@ -7,8 +7,8 @@ import org.openqa.selenium.WebElement;
 public class HomePageObjs 
 {
 	public WebDriver driver;
-	By signin = By.cssSelector("a[href*='sign_in']"); //CREATE ELEMENTS SELECTORS HEAR 
-	By username = By.xpath("//input[@id='user_email']");
+	private By signin = By.cssSelector("a[href*='sign_in']"); //CREATE ELEMENTS SELECTORS HEAR 
+	private By username = By.xpath("//input[@id='user_email']");
 	
 	
 	

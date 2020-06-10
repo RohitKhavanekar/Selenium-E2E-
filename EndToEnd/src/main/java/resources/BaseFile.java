@@ -24,6 +24,7 @@ public class BaseFile   //THIS FILE IS BASE FILE ONLY CHANGE THE PARAMETRS IN TH
 		FileInputStream fis = new FileInputStream("C:\\Users\\Dell\\eclipse-workspace\\E2EProject\\src\\main\\java\\resources\\data.properties");
 		
 		prop.load(fis);
+		//String browserName = System.getProperty("browser");       FOR JENKINS PARAMETRIZED WORKING
 		String browserName = prop.getProperty("browser");
 		
 		
