@@ -41,6 +41,16 @@ public class BaseFile   //THIS FILE IS BASE FILE ONLY CHANGE THE PARAMETRS IN TH
 			driver = new ChromeDriver();
 		}
 		
+		else if (browserName.equalsIgnoreCase("chromeheadless")) 
+		{
+			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\java\\resources\\chromedriver.exe"); //Dynamic Paths
+			ChromeOptions options = new ChromeOptions();//FOR HEADLESS RUNNING OF CHROME  ----1
+			options.addArguments("--headless");//FOR HEADLESS RUNNING OF CHROME  ----2
+			//System.setProperty("webdriver.chrome.driver", "D:\\Rohit_Folder\\MAXIMUS\\Selenium Driver NEVER DELETE\\ChromeDriver 83\\chromedriver.exe");
+			driver = new ChromeDriver(options);//FOR HEADLESS RUNNING OF CHROME  ----3
+			
+		}
+		
 		else if(browserName.equalsIgnoreCase("Firefox"))
 		{
 			System.setProperty("webdriver.firefox.driver", System.getProperty("user.dir")+"\\src\\main\\java\\resources\\geckodriver.exe");//Dynamic Paths
@@ -48,6 +58,7 @@ public class BaseFile   //THIS FILE IS BASE FILE ONLY CHANGE THE PARAMETRS IN TH
 			driver = new FirefoxDriver();
 		}
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
 		return driver;
 	}
 	
