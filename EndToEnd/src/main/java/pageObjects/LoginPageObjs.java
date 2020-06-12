@@ -13,6 +13,7 @@ public class LoginPageObjs
 	By password = By.xpath("//input[@type='password']");
 	By login = By.xpath("//input[@name='commit']");
 	By prompt = By.xpath("//*[@class='content-box']/h1");
+	By headder = By.cssSelector("div[class='box-footer'] a");
 	
 	
 	
@@ -47,7 +48,10 @@ public class LoginPageObjs
 		return driver.findElement(prompt);
 		
 	}
-	
+	public WebElement headder()
+	{
+		return driver.findElement(headder);
+	}
 	
 	
 	

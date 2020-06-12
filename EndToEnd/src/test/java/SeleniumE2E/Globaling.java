@@ -17,6 +17,8 @@ import resources.BaseFile;
 public class Globaling extends BaseFile
 {
 	public WebDriver driver;
+	HomePageObjs l;
+	LoginPageObjs lp ;
 	private static Logger Log = LogManager.getLogger(Globaling.class.getName());
 	//String url = null;
 	
@@ -24,28 +26,40 @@ public class Globaling extends BaseFile
 	public void initlization() throws IOException
 	{
 			driver = initlizeDriver();
+			driver.get("http://www.qaclickacademy.com/");
 			
 	}
 	
 	@Test
 	public void basePageNavigation() throws IOException
 	{
-		driver.get("http://www.qaclickacademy.com/");
+		
 		//driver = initlizeDriver();
 		//driver.get(prop.getProperty("url"));     NOT WORKING
 		//driver.get("www.qaclickacademy.com");
 		
-	
-		HomePageObjs l = new HomePageObjs(driver);
-		l.getsignin().click();
-		LoginPageObjs lp = new LoginPageObjs(driver);
+		
+		l = new HomePageObjs(driver);
+		l.signin().click();
+		lp = new LoginPageObjs(driver);
 		Assert.assertEquals(lp.prompt().getText(), "Log In to Rahul Shetty Academy123");
 		System.out.println("Assertion Done!");
 		Log.info("Assertion Done Using LOG4J");
-
+	}
 	
-
-}
+	@Test
+	public void headder()
+	{
+		
+		
+		Assert.assertEquals(lp.headder().getText(), "Create an Account123");
+		System.out.println("Create Account Assertion Done!");
+		Log.info("Assertion Done Using LOG4J");
+		
+		
+		
+	}
+		
 	
 	@AfterTest
 	public void teardown()

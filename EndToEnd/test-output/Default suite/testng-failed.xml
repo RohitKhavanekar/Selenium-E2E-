@@ -8,6 +8,7 @@
           <include name="initlization"/>
           <include name="teardown"/>
           <include name="basePageNavigation"/>
+          <include name="headder"/>
         </methods>
       </class> <!-- SeleniumE2E.Globaling -->
     </classes>

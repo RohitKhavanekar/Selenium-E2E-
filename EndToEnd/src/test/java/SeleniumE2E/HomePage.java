@@ -23,6 +23,7 @@ import resources.BaseFile;
 public class HomePage extends BaseFile
 {
 	public WebDriver driver;
+	HomePageObjs l;
 	private static Logger Log = LogManager.getLogger(HomePage.class.getName());
 	@BeforeTest
 	public void initlization() throws IOException
@@ -35,12 +36,13 @@ public class HomePage extends BaseFile
 	
 	@Test(dataProvider = "getdata")
 	
+		
 	public void basePageNavigation(String username,String password,String cmnt) throws IOException
 	{
 		
 		driver.get("http://www.qaclickacademy.com/");
-		HomePageObjs l = new HomePageObjs(driver);
-		l.getsignin().click();
+		l = new HomePageObjs(driver);
+		l.signin().click();
 		LoginPageObjs lp = new LoginPageObjs(driver);
 		
 		//Assertions added in two ways
@@ -56,6 +58,11 @@ public class HomePage extends BaseFile
 		
 		
 	}
+	
+	
+	
+	
+
 	
 	@AfterTest
 	public void teardown()

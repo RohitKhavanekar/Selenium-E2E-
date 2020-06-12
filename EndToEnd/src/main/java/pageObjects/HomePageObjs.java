@@ -12,6 +12,7 @@ public class HomePageObjs
 	
 	
 	
+	
 
 	
 	
@@ -25,10 +26,13 @@ public class HomePageObjs
 	
 	
 	
-	public WebElement getsignin()   //Create constructor for every singel element
+	public WebElement signin()   //Create constructor for every singel element
 	{
 		return driver.findElement(signin);
 	}
+	
+	
+	
 	
 	
 	
